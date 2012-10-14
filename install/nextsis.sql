@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Oct 14, 2012 at 11:23 PM
+-- Generation Time: Oct 15, 2012 at 12:10 AM
 -- Server version: 5.5.24
 -- PHP Version: 5.3.10-1ubuntu3.4
 
@@ -47,9 +47,9 @@ CREATE TABLE IF NOT EXISTS `person` (
 
 CREATE TABLE IF NOT EXISTS `person_school` (
   `person_id` int(10) unsigned NOT NULL COMMENT 'Foreign key from person table',
-  `schoold_id` mediumint(8) unsigned NOT NULL COMMENT 'Foriegn key from school table',
-  PRIMARY KEY (`person_id`,`schoold_id`),
-  KEY `schoold_id` (`schoold_id`)
+  `school_id` mediumint(8) unsigned NOT NULL COMMENT 'Foriegn key from school table',
+  PRIMARY KEY (`person_id`,`school_id`),
+  KEY `school_id` (`school_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Link table between person and school for many-to-many';
 
 -- --------------------------------------------------------
@@ -71,7 +71,7 @@ CREATE TABLE IF NOT EXISTS `school` (
 -- Constraints for table `person_school`
 --
 ALTER TABLE `person_school`
-  ADD CONSTRAINT `person_school_ibfk_1` FOREIGN KEY (`schoold_id`) REFERENCES `school` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `person_school_ibfk_3` FOREIGN KEY (`school_id`) REFERENCES `school` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `person_school_ibfk_2` FOREIGN KEY (`person_id`) REFERENCES `person` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
