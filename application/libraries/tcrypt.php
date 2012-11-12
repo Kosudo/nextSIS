@@ -1,13 +1,26 @@
 <?php
 
-/* nextSIS Tcrypt
- * 
+/* nextSIS Tcrypt class
+ *
+ * PURPOSE 
  * This creates a class for generating and checking salted hashed passwords. It's a temporary solution right now without key-
  * -lengthening. 
  * 
- * http://nextsis.org 
- */
-
+ * LICENCE 
+ * This file is part of nextSIS.
+ * 
+ * nextSIS is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as
+ * published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+ * 
+ * nextSIS is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License along with nextSIS. If not, see
+ * <http://www.gnu.org/licenses/>.
+ * 
+ * Copyright 2012 http://nextsis.org
+ */ 
+ 
 class Tcrypt
 {
 	public function password_hash($password)
@@ -40,11 +53,6 @@ class Tcrypt
 		// get the prepended salt from the front of the hash and the valid SHA256 hash
 		$salt = substr($correcthash,0,64);
 		$validhash = substr($correcthash,64,64); // this is the actual SHA256
-		
-		/*echo "<br>";
-		echo $password."<br>";
-		echo $salt."<br>";
-		echo $validhash."<br>"; */		
 		
 		// hash the password from the form ($password)
 		$checkhash = hash("sha256",$salt.$password);
