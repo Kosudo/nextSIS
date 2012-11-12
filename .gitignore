@@ -1,0 +1,7 @@
+*.class
+*.pyc
+*.pyo
+*.ini
+*.project
+application/config/config.php
+application/config/database.php

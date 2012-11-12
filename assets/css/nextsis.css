@@ -1,0 +1,126 @@
+.Main {
+	display: block;
+}
+
+body {
+	background-color: #fbfbfb;
+  	font-family: "Calibri", "Arial", "FreeSans", "Helvetica";	
+	margin: 0px;
+	padding: 0px;
+}
+
+div.body {
+	margin-left: 0px;
+	padding-left: 10px;
+}
+
+div.header {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #ebebeb;
+	background-color: white;
+	padding: 5px;
+}
+
+div.body {
+	margin: 10px;
+}
+
+div.form {
+	float: left;
+	height: 30px;
+	width: 260px;
+	padding: 0px;
+	margin: 0px;
+}
+
+h1 {
+  	font-size: 24px;
+  	font-weight: normal;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	margin-top: 0px;	  
+}
+
+h2 {
+  	font-size: 18px;
+  	font-weight: normal;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	margin-top: 0px;	  
+}
+
+h3 {
+	font-size: 18px;
+	font-weight: normal;
+	margin: 0px;
+	padding: 0px; 	
+}
+
+input.highlight {
+	background-color: #FFCC08;
+	border: 0px;
+	font-size: 18px;
+	height: 30px;
+	margin-left: 0px;
+}
+
+span.calendar {
+	background-color: white;
+	border-color: #ebebeb;
+	border-style: solid;
+	border-width: 1px;
+	float: left;
+	height: 600px;
+	margin: 5px;
+	width: 70%;
+}
+
+span.header {
+	display: inline-block;
+	font-size: 24px;
+	line-height: 30px;
+	padding: 5px;
+	vertical-align: top;
+}
+
+span.login {
+	display: block;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 250px;
+}
+
+table {
+	background-color: white;
+	width: 100%;
+}
+
+td.background {
+	background-color: #fbfbfb;
+}
+
+.static {
+	background-color: #ff0000;
+	width: 240px;
+}
+
+.sidebar-nav-fixed {
+     position:fixed;
+     top:60px;
+     width:21.97%;
+ }
+
+ @media (max-width: 767px) {
+     .sidebar-nav-fixed {
+         width:auto;
+     }
+ }
+
+ @media (max-width: 979px) {
+     .sidebar-nav-fixed {
+         position:static;
+        width: auto;
+     }
+ }
