@@ -111,6 +111,28 @@ td.background {
      top:60px;
      width:21.97%;
  }
+ 
+.navleft {
+  width: 300px;
+}
+
+input.navleft,
+  textarea.navleft,
+  .uneditable-input.navleft {
+    width: 214px;
+  }
+  
+.table td.navleft,
+.table th.navleft {
+  float: none;
+  width: 284px;
+  margin-left: 0;
+}
+
+.row-fluid .navleft {
+  width: 31.914893617021278%;
+  *width: 31.861702127659576%;
+}
 
  @media (max-width: 767px) {
      .sidebar-nav-fixed {

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <!--
  nextSIS home view
  
@@ -19,10 +20,10 @@
  Copyright 2012 http://nextsis.org
 -->
 
-<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">		
 		<link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.css');?>" type="text/css">
 		<link rel="stylesheet" href="<?php echo base_url('assets/css/nextsis.css');?>" type="text/css">
 		<link rel="shortcut icon" href="<?php echo base_url('assets/img/nextsis.favicon.png');?>">
@@ -31,11 +32,44 @@
 	
 	<body>
 		<div class='navbar'>
-  		<div class='navbar-inner'>
-    	<a class='brand' href='home'>nextSIS &gt;</a>
-    	<ul class='nav'>
-      	<li class='active'><a href='home'><?php echo $this->lang->line('home');?></a></li>
-      	<li><a href='home/logout'><?php echo $this->lang->line('logout');?></a></li>		
-    	</ul></div></div>	
+  			<div class='navbar-inner'>
+  				<div class="container">
+  				   	<a class="brand" href="home">nextSIS &gt;</a>
+  				   	<div class="navbar-content">
+    					<ul class="nav">
+    						<li><a href='home'><?php echo $this->lang->line('home');?></a></li>
+      						<li class='active'><a href=""><?php echo $this->lang->line("people");?></a></li>
+      						<li><a href=""><?php echo $this->lang->line("courses");?></a></li>
+      						<li><a href=""><?php echo $this->lang->line("setup");?></a></li>      						      						
+      						<li><a href="home/logout"><?php echo $this->lang->line("logout");?></a></li>    						
+  				   		</ul>
+  				   	</div>
+  				</div>
+  			</div>
+  		</div>
+  		
+  		<div class="container-fluid">
+  			<div class="row-fluid">
+  				<div class="span4" style="max-width: 180px"> <!-- need to incorporate the max-width into nextsis.css -->
+  					<ul class="nav nav-pills nav-stacked">
+  						<li class="active"><a href=""><?php echo $this->lang->line("search");?></a></li>
+  						<li><a href=""><?php echo $this->lang->line("add_new_person");?></a></li>
+  						<li><a href=""><?php echo $this->lang->line("attendance");?></a></li>
+  						<li><a href=""><?php echo $this->lang->line("grades");?></a></li>  						  						
+  					</ul>
+  					<div class="well">
+  						<p><b><?php echo $this->lang->line("help");?></b>&nbsp;<?php echo $this->lang->line("sample_help_message");?></p>
+  					</div>
+  				</div>
+  				
+        		<div class="span8">
+					<h1><?php echo $this->lang->line("people");?></h1>
+        		</div>  			
+  				  				
+  			</div>
+  		</div>
+  		
+
+  		
 	</body>
 </html>
