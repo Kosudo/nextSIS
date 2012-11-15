@@ -40,10 +40,13 @@
     						<li><a href='home'><i class="icon-home"></i>&nbsp;<?php echo $this->lang->line('home');?></a></li>
       						<li class='active'><a href=""><i class="icon-user"></i>&nbsp;<?php echo $this->lang->line("people");?></a></li>
       						<li><a href=""><i class="icon-list-alt"></i>&nbsp;<?php echo $this->lang->line("courses");?></a></li>
-      						<li><a href=""><i class="icon-wrench"></i>&nbsp;<?php echo $this->lang->line("setup");?></a></li>      						      						
+      						<li><a href=""><i class="icon-wrench"></i>&nbsp;<?php echo $this->lang->line("setup");?></a></li>
       						<li><a href=""><i class="icon-question-sign"></i>&nbsp;<?php echo $this->lang->line("help");?></a></li>
-      						<li><a href="home/logout"><i class="icon-off"></i>&nbsp;<?php echo $this->lang->line("logout");?></a></li>    						
+      						<li><a href="home/logout"><i class="icon-off"></i>&nbsp;<?php echo $this->lang->line("logout");?></a></li>
   				   		</ul>
+    					<ul class='nav pull-right'>
+      						<li><a href="person/me"><i class="icon-user"></i>&nbsp;<?php echo $username;?></a></li>
+    					</ul>  				   		
   				   	</div>
   				</div>
   			</div>
