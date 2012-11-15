@@ -34,14 +34,15 @@
 		<div class='navbar'>
   			<div class='navbar-inner'>
   				<div class="container">
-  				   	<a class="brand" href="home">nextSIS &gt;</a>
+  				   	<a class="brand" href="home">nextSIS&gt;</a>
   				   	<div class="navbar-content">
     					<ul class="nav">
-    						<li><a href='home'><?php echo $this->lang->line('home');?></a></li>
-      						<li class='active'><a href=""><?php echo $this->lang->line("people");?></a></li>
-      						<li><a href=""><?php echo $this->lang->line("courses");?></a></li>
-      						<li><a href=""><?php echo $this->lang->line("setup");?></a></li>      						      						
-      						<li><a href="home/logout"><?php echo $this->lang->line("logout");?></a></li>    						
+    						<li><a href='home'><i class="icon-home"></i>&nbsp;<?php echo $this->lang->line('home');?></a></li>
+      						<li class='active'><a href=""><i class="icon-user"></i>&nbsp;<?php echo $this->lang->line("people");?></a></li>
+      						<li><a href=""><i class="icon-list-alt"></i>&nbsp;<?php echo $this->lang->line("courses");?></a></li>
+      						<li><a href=""><i class="icon-wrench"></i>&nbsp;<?php echo $this->lang->line("setup");?></a></li>      						      						
+      						<li><a href=""><i class="icon-question-sign"></i>&nbsp;<?php echo $this->lang->line("help");?></a></li>
+      						<li><a href="home/logout"><i class="icon-off"></i>&nbsp;<?php echo $this->lang->line("logout");?></a></li>    						
   				   		</ul>
   				   	</div>
   				</div>
@@ -50,9 +51,9 @@
   		
   		<div class="container-fluid">
   			<div class="row-fluid">
-  				<div class="span4" style="max-width: 180px"> <!-- need to incorporate the max-width into nextsis.css -->
+  				<div class="span4 navleft">
   					<ul class="nav nav-pills nav-stacked">
-  						<li class="active"><a href=""><?php echo $this->lang->line("search");?></a></li>
+  						<li class="active"><a href=""><?php echo $this->lang->line("search");?>&nbsp;<i class="icon-search icon-white"></i></a></li>
   						<li><a href=""><?php echo $this->lang->line("add_new_person");?></a></li>
   						<li><a href=""><?php echo $this->lang->line("attendance");?></a></li>
   						<li><a href=""><?php echo $this->lang->line("grades");?></a></li>  						  						

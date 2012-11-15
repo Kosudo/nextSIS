@@ -113,7 +113,7 @@ td.background {
  }
  
 .navleft {
-  width: 300px;
+  max-width: 150px;
 }
 
 input.navleft,
@@ -133,6 +133,7 @@ input.navleft,
   width: 31.914893617021278%;
   *width: 31.861702127659576%;
 }
+
 
  @media (max-width: 767px) {
      .sidebar-nav-fixed {
