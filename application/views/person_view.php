@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <!--
- nextSIS home view
+ nextSIS person view
  
  PURPOSE 
- This displays the homepage once the user has logged in.
+ This displays a list of people in the database.
  
  LICENCE 
  This file is part of nextSIS.
@@ -37,8 +37,8 @@
   				   	<a class="brand" href="home">nextSIS&gt;</a>
   				   	<div class="navbar-content">
     					<ul class="nav">
-    						<li class="active"><a href="home"><i class="icon-home"></i>&nbsp;<?php echo $this->lang->line("home");?></a></li>
-      						<li><a href="person/listing"><i class="icon-user"></i>&nbsp;<?php echo $this->lang->line("people");?></a></li>
+    						<li><a href="home"><i class="icon-home"></i>&nbsp;<?php echo $this->lang->line("home");?></a></li>
+      						<li class="active"><a href=""><i class="icon-user"></i>&nbsp;<?php echo $this->lang->line("people");?></a></li>
       						<li><a href=""><i class="icon-list-alt"></i>&nbsp;<?php echo $this->lang->line("courses");?></a></li>
       						<li><a href=""><i class="icon-wrench"></i>&nbsp;<?php echo $this->lang->line("setup");?></a></li>
       						<li><a href=""><i class="icon-question-sign"></i>&nbsp;<?php echo $this->lang->line("help");?></a></li>
@@ -67,7 +67,7 @@
   				</div>
   				
         		<div class="span8">
-					<h1><?php echo $this->lang->line("home");?></h1>
+					<h1><?php echo $this->lang->line("people");?></h1>
         		</div>  			
   				  				
   			</div>
