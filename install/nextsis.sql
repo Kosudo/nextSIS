@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 --
 -- Database: `nextsis`
 --
-DROP DATABASE `nextsis`;
+DROP DATABASE IF EXISTS `nextsis`;
 CREATE DATABASE `nextsis` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE `nextsis`;
 
